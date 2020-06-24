@@ -100,20 +100,22 @@ public class VentanaRetiros extends JInternalFrame {
 		
 		JButton btnBuscar = new JButton("Buscar");
 		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnBuscar.setBounds(369, 75, 97, 25);
+		btnBuscar.setBounds(410, 75, 97, 25);
 		getContentPane().add(btnBuscar);
 		
 		JButton btnGuardar = new JButton("Confirmar Retiro");
+		btnGuardar.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnGuardar.setBounds(294, 339, 166, 40);
 		getContentPane().add(btnGuardar);
 		
 		JButton btnCancelar = new JButton("Cancelar");
+		btnCancelar.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnCancelar.setBounds(472, 339, 97, 40);
 		getContentPane().add(btnCancelar);
 		
 		JLabel lblNewLabel_5 = new JLabel("Datos de la cuenta");
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblNewLabel_5.setBounds(98, 13, 218, 33);
+		lblNewLabel_5.setBounds(223, 13, 218, 33);
 		getContentPane().add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("Saldo:");
