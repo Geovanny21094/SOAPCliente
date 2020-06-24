@@ -14,6 +14,7 @@ public class VentanaRetiros extends JInternalFrame {
 	private JTextField textNombres;
 	private JTextField textApellidos;
 	private JTextField textMonto;
+	private JTextField textSaldo;
 
 	/**
 	 * Launch the application.
@@ -44,12 +45,12 @@ public class VentanaRetiros extends JInternalFrame {
 		
 		JLabel lblNewLabel = new JLabel("# cuenta:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblNewLabel.setBounds(63, 50, 81, 19);
+		lblNewLabel.setBounds(63, 77, 81, 19);
 		getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Cedula:");
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblNewLabel_1.setBounds(63, 106, 81, 16);
+		lblNewLabel_1.setBounds(63, 129, 81, 16);
 		getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Nombres:");
@@ -64,18 +65,18 @@ public class VentanaRetiros extends JInternalFrame {
 		
 		JLabel lblNewLabel_4 = new JLabel("Monto:");
 		lblNewLabel_4.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblNewLabel_4.setBounds(63, 306, 62, 19);
+		lblNewLabel_4.setBounds(410, 239, 62, 19);
 		getContentPane().add(lblNewLabel_4);
 		
 		textCuenta = new JTextField();
 		textCuenta.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		textCuenta.setBounds(187, 47, 116, 22);
+		textCuenta.setBounds(187, 75, 116, 22);
 		getContentPane().add(textCuenta);
 		textCuenta.setColumns(10);
 		
 		textCedula = new JTextField();
 		textCedula.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		textCedula.setBounds(187, 103, 116, 22);
+		textCedula.setBounds(187, 123, 116, 22);
 		getContentPane().add(textCedula);
 		textCedula.setColumns(10);
 		
@@ -93,21 +94,37 @@ public class VentanaRetiros extends JInternalFrame {
 		
 		textMonto = new JTextField();
 		textMonto.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		textMonto.setBounds(187, 303, 116, 22);
+		textMonto.setBounds(484, 237, 116, 22);
 		getContentPane().add(textMonto);
 		textMonto.setColumns(10);
 		
 		JButton btnBuscar = new JButton("Buscar");
-		btnBuscar.setBounds(365, 46, 97, 25);
+		btnBuscar.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnBuscar.setBounds(369, 75, 97, 25);
 		getContentPane().add(btnBuscar);
 		
-		JButton btnGuardar = new JButton("Guardar");
-		btnGuardar.setBounds(128, 359, 97, 25);
+		JButton btnGuardar = new JButton("Confirmar Retiro");
+		btnGuardar.setBounds(294, 339, 166, 40);
 		getContentPane().add(btnGuardar);
 		
 		JButton btnCancelar = new JButton("Cancelar");
-		btnCancelar.setBounds(257, 359, 97, 25);
+		btnCancelar.setBounds(472, 339, 97, 40);
 		getContentPane().add(btnCancelar);
+		
+		JLabel lblNewLabel_5 = new JLabel("Datos de la cuenta");
+		lblNewLabel_5.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNewLabel_5.setBounds(98, 13, 218, 33);
+		getContentPane().add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("Saldo:");
+		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 15));
+		lblNewLabel_6.setBounds(63, 300, 69, 16);
+		getContentPane().add(lblNewLabel_6);
+		
+		textSaldo = new JTextField();
+		textSaldo.setBounds(187, 298, 116, 22);
+		getContentPane().add(textSaldo);
+		textSaldo.setColumns(10);
 
 	}
 }
